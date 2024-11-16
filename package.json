@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-specific-type-assertion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Disallow the usage of one or few type assertion in your typescript code",
   "main": "index.js",
   "scripts": {

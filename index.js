@@ -1,7 +1,7 @@
 const plugin = {
   meta: {
     name: "eslint-plugin-no-specific-type-assertion",
-    version: "1.0.0",
+    version: "1.0.1",
   },
   configs: {},
   rules: {
@@ -35,7 +35,9 @@ const plugin = {
 
         return {
           TSAsExpression(node) {
-            if (disallowedTypes.includes(node.typeAnnotation.typeName.name)) {
+            if (
+              disallowedTypes?.includes(node?.typeAnnotation?.typeName?.name)
+            ) {
               context.report({
                 node,
                 messageId: "avoidSpecificTypeAssertion",
@@ -44,7 +46,9 @@ const plugin = {
             }
           },
           TSTypeAssertion(node) {
-            if (disallowedTypes.includes(node.typeAnnotation.typeName.name)) {
+            if (
+              disallowedTypes?.includes(node?.typeAnnotation?.typeName?.name)
+            ) {
               context.report({
                 node,
                 messageId: "avoidSpecificTypeAssertion",
