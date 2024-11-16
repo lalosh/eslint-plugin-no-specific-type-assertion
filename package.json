@@ -1,0 +1,22 @@
+{
+  "name": "eslint-plugin-no-specific-type-assertion",
+  "version": "1.0.0",
+  "description": "Disallow the usage of one or few type assertion in your typescript code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "no-type-assertion"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lalosh/eslint-plugin-no-specific-type-assertion.git"
+  },
+  "author": "Louay Al-osh",
+  "license": "MIT",
+  "homepage": "https://github.com/lalosh/eslint-plugin-no-specific-type-assertion",
+  "bugs": "https://github.com/lalosh/eslint-plugin-no-specific-type-assertion/issues"
+}
